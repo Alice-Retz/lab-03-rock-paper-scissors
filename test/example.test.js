@@ -22,3 +22,14 @@ test('does 3 = scissors', (expect) => {
     expect.equal(actual, expected);
 });
 
+
+test('does rock beat scissors', (expect) => {
+
+const user = 'rock'; 
+const computer = 'scissors';
+const expected = 'win';
+const actual = 'doesUserWin(user, computer)'; 
+expect.equal(actual, expected); 
+
+})
+
