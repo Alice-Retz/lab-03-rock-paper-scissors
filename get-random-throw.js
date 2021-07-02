@@ -9,18 +9,21 @@ export function getRandomThrow(randomNum) {
     else if (randomNum === 2) {
         return 'paper';
     }
-    else {
+    else if (randomNum === 3) {
         return 'scissors';
+    }
+    else {
+        return 'error';
     }
 }
 
+let outcome = document.getElementById('outcome');
+let computerChoice = document.getElementById('computer-choice');
+
 export function doesUserWin(userThrow, computerThrow) {
-    let outcome = document.getElementById('outcome');
-    let computerChoice = document.getElementById('computer-choice');
     if (userThrow === 'rock' && computerThrow === 'scissor') {
-        //computerChoice.textContent = `Scissor!`;
-        return 'win';
-        //outcome.textContent = `You won!`;
+        computerChoice.textContent = `Scissor!`;
+        outcome.textContent = `You won!`;
     }
     else if (userThrow === 'rock' && computerThrow === 'paper') {
         computerChoice.textContent = `Paper!`;

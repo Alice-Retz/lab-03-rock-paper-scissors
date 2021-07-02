@@ -16,14 +16,8 @@ const test = QUnit.test;
 //     // Make assertions about what is expected versus the actual result
 //     expect.equal(actual, expected);
 // });
-import { getRandomThrow, doesUserWin } from '../get-random-throw.js';
+import { getRandomThrow } from '../get-random-throw.js';
 
-test('does rock beat paper', (expect) => {
-    
-    const expected = 'win';
-    const actual = doesUserWin('rock', 'scissor');
-    expect.equal(actual, expected);
-});
 
 
 test('does 1 = rock', (expect) => {
