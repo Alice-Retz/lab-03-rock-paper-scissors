@@ -18,8 +18,9 @@ export function doesUserWin(userThrow, computerThrow) {
     let outcome = document.getElementById('outcome');
     let computerChoice = document.getElementById('computer-choice');
     if (userThrow === 'rock' && computerThrow === 'scissor') {
-        computerChoice.textContent = `Scissor!`;
-        outcome.textContent = `You won!`;
+        //computerChoice.textContent = `Scissor!`;
+        return 'win';
+        //outcome.textContent = `You won!`;
     }
     else if (userThrow === 'rock' && computerThrow === 'paper') {
         computerChoice.textContent = `Paper!`;

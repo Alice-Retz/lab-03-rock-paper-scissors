@@ -16,4 +16,5 @@ submit.addEventListener('click', ()=>{
     const selected = document.querySelector('input[type=radio]:checked');
     const userThrow = selected.value; 
     doesUserWin(userThrow, computerThrow);
+    
 });
