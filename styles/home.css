@@ -1,45 +1,86 @@
 .icons {
     max-height: 200px;
+    margin-top: 10px;
 
 }
 
 
-main {
+.container {
+    background-color: aquamarine;
     height: auto;
-    width: 400px;
+    width: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20px;
 }
 .top {
+background-color: azure;
+
 grid-column-start: 1;
 grid-column-end: 3;
 grid-row-start: 1;
 grid-row-end: 2;
+text-align: center;
 }
 
-.left {
-    max-width: 100px;
-    grid-column-start: 1;
+.left-column {
+grid-column-start: 1;
 grid-column-end: 2;
 grid-row-start: 2;
-grid-row-end: 4;
+grid-row-end: 6;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
 }
 
 .right-top {
-    max-width: 100px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+border-style: solid;
+border-color: black;
+border-width: 2px;
+border-radius: 20px;
+height: 200px;
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 4;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .right-bottom {
-    max-width: 100px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
+border-style: solid;
+border-color: black;
+border-width: 2px;
+border-radius: 20px;
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 4;
+grid-row-end: 6;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight:900;
+}
+button {
+    margin: 10px;
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 2px 3px grey;
 }
 
 /* input */
