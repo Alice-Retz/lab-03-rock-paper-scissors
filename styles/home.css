@@ -1,1 +1,55 @@
+.icons {
+    max-height: 200px;
 
+}
+
+
+main {
+    height: auto;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.top {
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.left {
+    max-width: 100px;
+    grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end: 4;
+}
+
+.right-top {
+    max-width: 100px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.right-bottom {
+    max-width: 100px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/* input */
+input[type=radio] {
+    display: none;
+}
+input[type=radio]:checked + img {
+    border: solid black;
+} 
+
+input[type=radio]:not(:checked) + img:hover {
+    opacity: 70%;
+}
