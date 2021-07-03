@@ -19,23 +19,29 @@
         </div>
     </header>
     <main>
-        <h1>Let's play Rock, Paper, Scissors!</h1>
-        <h3>The rules:</h3>
-        <ul>Rock beats Scissors</ul>
-        <ul>Paper beats Rock</ul>
-        <ul>Scissors beat Paper</ul>
-<input type="radio" name="rps" value="rock" id="rock"> <label for="rock">Rock</label>
-<input type="radio" name="rps" value="paper" id="paper"> <label for="paper">Paper</label>
-<input type="radio" name="rps" value="scissors" id="scissors"> <label for="scissors">Scissors</label>
-<button id="submit">Go!</button>
-<button id="reset-button">Reset counters?</button>
+        <section class='top'>
+            <h1>Let's play Rock, Paper, Scissors!</h1>
+            <ul>Rock beats Scissors</ul>
+            <ul>Paper beats Rock</ul>
+            <ul>Scissors beat Paper</ul>
+        </section>
+        <section class='left-column'>
+            <input type="radio" name="rps" value="rock" id="rock"> <label for="rock">Rock</label>
+            <input type="radio" name="rps" value="paper" id="paper"> <label for="paper">Paper</label>
+            <input type="radio" name="rps" value="scissors" id="scissors"> <label for="scissors">Scissors</label>
+            <button id="submit">Go!</button>
+            <button id="reset-button">Reset counters?</button>
+        </section>
+        <section class='right-top'>
 <span id="computer-choice">Rock, paper, scissors!</span>
 <span id="outcome"></span>
+        </section>
+        <section class='right-bottom'>
 <span class="win-loss-counts">Wins: <span id="total-wins">0</span></span>
 <span class="win-loss-counts">Losses: <span id="total-loss">0</span></span>
 <span class="win-loss-counts">Draws: <span id="total-draws">0</span></span>
 <span class="win-loss-counts">Resets: <span id="total-resets">0</span></span>
-
+        </section>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
